@@ -1,9 +1,12 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
   name: petclinic
 spec:
   replicas: 3
+  selector:
+    matchLabels:
+      app: petclinic
   template:
     metadata:
       labels:
