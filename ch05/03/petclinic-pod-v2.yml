@@ -1,11 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: petclinic
+  name: petclinic-v1.0.1
   labels:
     app: petclinic
-    version: v2
+    version: v1.0.1
 spec:
   containers:
     - name: petclinic
-      image: spring2go/spring-petclinic:1.0.0.RELEASE
+      image: spring2go/spring-petclinic:1.0.1.RELEASE
+      imagePullPolicy: Always

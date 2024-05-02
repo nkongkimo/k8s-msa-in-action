@@ -1,12 +1,13 @@
 apiVersion: v1
-kind: apiVersion: v1
 kind: Service
 metadata:
-  name: pod-svc
+  name: petclinic-service
 spec:
   selector:
     app: petclinic
+    version: v1.0.0
   ports:
-  - port: 8080
-    targetPort: 8080
-  type: ClusterIP
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+  type: NodePort
