@@ -2,9 +2,9 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: petclinic
-    labels:
+  labels:
     app: petclinic
-    version: v1
+    version: v2
 spec:
   containers:
     - name: petclinic
