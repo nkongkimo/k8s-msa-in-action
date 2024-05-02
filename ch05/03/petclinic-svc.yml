@@ -11,3 +11,5 @@ spec:
       port: 80
       targetPort: 8080
   type: NodePort
+# type 可以是 ClusterIP、NodePort、LoadBalancer
+
