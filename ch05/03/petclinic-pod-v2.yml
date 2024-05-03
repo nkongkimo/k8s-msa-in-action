@@ -10,3 +10,4 @@ spec:
     - name: petclinic
       image: spring2go/spring-petclinic:1.0.1.RELEASE
       imagePullPolicy: Always
+ ## notes test
