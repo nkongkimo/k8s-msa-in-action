@@ -10,7 +10,7 @@ spec:
   template:
     metadata:
       labels:
-        app: petclinic
+        app: petclinic1
     spec:
       containers:
         - name: petclinic

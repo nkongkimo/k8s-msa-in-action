@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: petclinic
-  minReadySeconds: 10
+  minReadySeconds: 5
   replicas: 3
   template:
     metadata:
@@ -15,4 +15,4 @@ spec:
     spec:
       containers:
         - name: petclinic
-          image: spring2go/spring-petclinic:1.0.1.RELEASE
+          image: spring2go/spring-petclinic:1.0.0.RELEASE
