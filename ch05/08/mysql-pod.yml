@@ -13,3 +13,4 @@ spec:
           value: petclinic
         - name: MYSQL_DATABASE
           value: petclinic
+## this is mysql pod for petclinic service
