@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: petclinic-v1.0.0
+  name: petclinic-v0
   labels:
     app: petclinic
     version: v1.0.0

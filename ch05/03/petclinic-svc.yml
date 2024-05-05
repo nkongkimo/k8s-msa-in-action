@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: petclinic-service
+  name: svc-petclinic
 spec:
   selector:
     app: petclinic

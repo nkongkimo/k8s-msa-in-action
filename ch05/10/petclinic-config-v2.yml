@@ -5,5 +5,7 @@ metadata:
 data:
   SPRING_PROFILES_ACTIVE: mysql
   DATASOURCE_URL: jdbc:mysql://svc-mysql/petclinic
+  DATASOURCE_USERNAME: root
+  DATASOURCE_PASSWORD: petclinic
   DATASOURCE_INIT_MODE: always
   TEST_CONFIG: test_config_v2
