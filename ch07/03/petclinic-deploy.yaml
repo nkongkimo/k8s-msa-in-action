@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: petclinic
+spec:
+  selector:
+    matchLabels:
+      app: petclinic
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: petclinic
+    spec:
+      containers:
+        - name: petclinic
+          image: spring2go/spring-petclinic-customers-service:1.0.0.RELEASE
+          resources:
+            requests:
+              memory: "30Mi"
+              cpu: "200m"
+            limits:
+              memory: "250Mi"
+          env:
+            - name: SERVER_PORT
+              value: "8080"
