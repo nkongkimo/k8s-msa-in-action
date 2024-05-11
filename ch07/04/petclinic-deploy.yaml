@@ -1,27 +1,28 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: petclinic
+  name: customer
 spec:
   selector:
     matchLabels:
-      app: petclinic
+      app: customer
   minReadySeconds: 5
   replicas: 1
   template:
     metadata:
       labels:
-        app: petclinic
+        app: customer
     spec:
       containers:
-        - name: petclinic
-          image: spring2go/spring-petclinic:1.0.0.RELEASE
+        - name: customer
+          image: spring2go/spring-petclinic-customers-service:1.0.0.RELEASE
           resources:
             requests:
-              memory: "128Mi"
-              cpu: "200m"
+              memory: "100Mi"
             limits:
               memory: "500Mi"
           env:
             - name: SERVER_PORT
               value: "8080"
+            - name: JAVA_OPTS
+              value: "-XX:MaxRAMPercentage=25.0"
